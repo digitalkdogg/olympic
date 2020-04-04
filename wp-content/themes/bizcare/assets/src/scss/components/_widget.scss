@@ -1,0 +1,19 @@
+.widget_search {
+	label {
+		margin: 0;
+		width: calc(100% - 105px);
+		input.search-field {
+		    width: 100%;
+		    border: 1px solid $border-color;
+		    padding: 7px;
+		    height: 42px;
+		}
+	}
+
+	input.search-submit {
+	    width: 92px;
+	    cursor: pointer;
+	    height: 42px;
+    	line-height: 2;
+	}
+}

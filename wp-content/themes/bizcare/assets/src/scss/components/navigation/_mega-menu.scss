@@ -1,0 +1,38 @@
+.mega-menu{
+    position: absolute;   
+    @extend %menu-position;
+    width: 100%;
+    background: $color_white;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem;
+    max-height: 80vh;
+    transform-origin: top;
+    @include transition(all .2s);
+    box-shadow: 0 0 6px #adaaaa;
+    &:before {
+       @extend %menu-icon;
+    }
+    > li {
+        vertical-align: top;
+        display: inline-block;
+        position: relative;
+        max-width: 25%;
+        flex: 0 0 25%;
+        width: 100%;
+        padding-right: 1rem;
+        > a {
+            font-weight: 600;
+        }
+    }
+}  
+
+.has-mega-menu{   
+    &:hover {
+        .mega-menu {
+           @extend %visible-menu;
+        }        
+    }    
+}

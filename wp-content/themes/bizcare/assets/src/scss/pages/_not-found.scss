@@ -1,0 +1,18 @@
+.error404 {
+	.evt-banner-caption {
+	    text-align: center;
+	    padding: 5% 0;
+	}
+	.search-field {
+		border: 1px solid $border-color;
+    	padding: 10px;
+	}
+	.search-submit {
+	    padding: 10px;
+	    cursor: pointer;
+	}
+	.evt-title {
+		text-transform: uppercase;
+    	font-weight: bold;
+	}
+}

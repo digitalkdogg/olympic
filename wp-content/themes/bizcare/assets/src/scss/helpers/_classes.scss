@@ -1,0 +1,104 @@
+.bg-primary {
+	@extend %bg-primary;
+}
+.#{$prefix}-bg-secondary {
+	background: $color_secondary
+}
+
+.#{$prefix}-color-primary {
+	@extend %color-primary;
+}
+
+.#{$prefix}-ls-none {
+	list-style: none;
+}
+
+.#{$prefix}-bg-primary {
+	@extend %bg-primary;
+}
+
+.#{$prefix}-has-overlay {
+	position: relative;
+	&:after {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.3);
+	}
+}
+.#{$prefix}-has-overlay-primary {
+	&:after {
+		opacity: .8;
+		@extend %bg-primary;
+	}
+}
+.#{$prefix}-text-light {
+	color: #9a9a9a;
+}
+.title-small {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #333;
+    @include media(mobile) {
+        font-size: 1.1rem;
+    }
+}
+
+.fs-8 {
+	font-size: 15px;
+}
+.fs-1 {
+	font-size: 1rem;
+}
+.fs-7 {
+	font-size: 0.75rem;
+}
+.fs-3 {
+	font-size: 3rem;
+}
+
+.z-index {
+	z-index: 9;
+}
+
+.#{$prefix}-has-bg {
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.#{$prefix}-shadow-sm {
+    box-shadow: 0 0 10px #c1c1c1;
+    @include transition(all .3s);
+    &:hover {
+    	box-shadow: none;
+    }
+}
+
+.py-7 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    @include media(mobile) {
+    	padding-top: 2.5rem;
+    	padding-bottom: 2.5rem;
+    }
+}
+
+body {
+	p {
+		color: #9a9a9a;
+	}
+}
+
+.mr-menu-open {
+	overflow: hidden !important;
+}
+
+body:not(.home) {
+	div#primary {
+		margin-bottom: 2.5rem;
+	}
+}

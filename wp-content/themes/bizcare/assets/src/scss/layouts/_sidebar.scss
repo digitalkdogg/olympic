@@ -1,0 +1,43 @@
+aside#secondary {
+    background: #f8f9fa;
+    padding: 1rem;
+    section.widget {
+	    background: $color_white;
+	    padding: 1rem;
+	}
+	h2.widget-title {
+	    @extend %widget-title;
+        border-bottom: 1px solid $border-color;
+	}
+    ul {
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+    	li {
+    		border-bottom: 1px solid $border-color;
+    		padding: 6px 15px;   
+    		position: relative;
+			@include transition(all .3s);
+
+    		&:before {
+				content: '\f101';
+				font-family: fontAwesome;
+				position: absolute;
+    			left: 0;
+    		} 	
+    		&:last-child {
+    			border-bottom: 0;
+    			padding-bottom: 0;   
+    		}	
+    		&:hover {
+    			a,
+    			&:before {
+					@extend %color-primary;	
+    			}
+			}
+    		a {
+    			color: $color_black;    			
+    		}
+    	}
+    }
+}

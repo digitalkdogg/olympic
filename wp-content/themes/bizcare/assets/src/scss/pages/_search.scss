@@ -1,0 +1,19 @@
+.search {
+	header.entry-header,
+	.entry-summary p {
+	    padding: .8rem;
+	}
+	.read-more-text {
+		padding-left: 0.8rem;
+		padding-right: 0.8rem;
+	}
+	.page {
+		h2.entry-title {
+		    margin: 0;
+		    padding: 0;
+		}
+		header.entry-header {
+			padding-bottom: 0;
+		}
+	}
+}

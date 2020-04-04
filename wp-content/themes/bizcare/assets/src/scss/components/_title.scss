@@ -1,0 +1,64 @@
+$title-color: #333;
+%title-line {
+	content: "";
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .5;
+}
+.#{$prefix}-section-title {
+    font-size: 2.1rem;
+    color: #333;
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include media(mobile) {
+        font-size: 1.6rem;
+    }
+}
+
+.page-title {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+.widget-title {
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.entry-title {
+    font-size: 1.5rem;
+    padding: 0 0 16px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    a {
+        @include transition(all .3s);
+        &:hover {
+            @extend %color-primary;
+            text-decoration: none;
+        }
+    }
+    @include media(mobile) {
+        font-size: 1.1rem;
+    }
+}
+body.page {
+   .entry-title {
+        padding: 0;
+        margin: 0;
+   }
+ 
+}
+
+.site-footer {
+    .widget-title {
+        color: $color_white;
+    }
+}

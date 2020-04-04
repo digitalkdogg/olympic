@@ -1,0 +1,39 @@
+%common-meta-font-style {
+	display: inline-block;
+    font-family: 'fontAwesome';
+    margin-right: 8px;
+}
+
+.entry-meta {
+	font-size: 0.85rem;
+	color: $muted;
+	a {
+		color: $muted;
+		@include transition(all .3s);
+		&:hover {
+		   @extend %color-primary;
+			text-decoration: none;
+		}
+	}
+	.posted-on {
+		&:before {
+			content: "\f274";
+			@extend %common-meta-font-style;
+		}
+	}	
+	.cat-links  {
+		padding-left: 8px;
+		&:before {
+			content: "\f07c";
+			@extend %common-meta-font-style;
+		}
+	}
+
+	.byline  {
+		padding-left: 15px;
+		&:before {
+			content: "\f007";
+			@extend %common-meta-font-style;
+		}
+	}
+}

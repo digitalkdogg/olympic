@@ -1,0 +1,111 @@
+// Main Image
+
+%website-width {
+  // used for blocks sizes
+  width: $size__site-width - ($size__side-padding * 2);
+  max-width: 100%;
+  
+  box-sizing: border-box;
+  padding-left: $size__padding-resp;
+  padding-right: $size__padding-resp;
+  margin: 0 auto ($size__padding * .75);
+  
+  @media #{$mq__smaller-than-tablet} {
+    padding-left: $size__padding-resp;
+    padding-right: $size__padding-resp;
+  }
+}
+
+
+.main-width {
+  
+  @extend %website-width;
+  
+  &.alignwide {
+    width: $size__site-width;
+    max-width: 100%;
+  }
+  
+  .has-sidebar .site-content &.alignwide {
+    width: 100%;
+  }
+  
+}
+
+.entry-image {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body.page,
+body.single {
+  .entry-image {
+    width: 100%;
+    height: 40vh;
+    max-height: 700px;
+    margin-bottom: $size__padding * .75;
+  }
+}
+
+// if there isn't a featured image compensate void space under the menu
+#masthead {
+  
+  @media #{$mq__larger-than-tablet} {
+    &.header-landscape + #content {
+      padding-top: $size__nav-height + $size__padding;
+    }
+  
+    &.header-portrait + #content {
+      padding-top: $size__nav-height + $size__branding-height + $size__margin + $size__padding;
+    }
+  }
+  
+  
+  & + #content {
+    overflow-x: hidden;
+    padding-top: $size__padding * .75;
+    
+    @media #{$mq__smaller-than-tablet} {
+      margin-top: $head__height-responsive;
+      padding-top: $size__padding * .5;
+    }
+  }
+}
+
+body.has-sidebar,
+body.woocommerce {
+  
+  &.sidebar-left .site-content {
+    flex-direction: row-reverse;
+  
+    @media #{$mq__smaller-than-tablet} {
+      flex-direction: column;
+    }
+  }
+  
+  .site-content {
+    display: flex;
+    justify-content: center;
+
+    width: $size__site-width;
+    max-width: 100%;
+  
+    box-sizing: border-box;
+    padding-left: $size__padding-resp;
+    padding-right: $size__padding-resp;
+    margin: 0 auto ($size__padding * .5);
+    
+    .content-area {
+      width: calc(100% - #{$sidebar__width + $sidebar__margin});
+    }
+  
+    @media #{$mq__smaller-than-tablet} {
+      width: 100%;
+      padding-left: $size__padding-resp;
+      padding-right: $size__padding-resp;
+      flex-direction: column;
+    }
+  }
+}

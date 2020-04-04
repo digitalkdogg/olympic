@@ -1,0 +1,29 @@
+.single {
+	.inner-banner-overlay {
+		.entry-header {
+		    border-bottom: 1px solid $border-color;
+		    border-top: 1px solid $border-color;
+		    margin-bottom: 1.5rem;
+		    padding: 10px 0;
+		}
+	}
+	.image-full ~ p {
+	    padding-top: 1rem;
+	}
+}
+
+.image-right {
+	@include media(mobileUp) {
+        float: right;
+    	padding-left: 23px;
+    }
+    
+}
+
+.image-right {
+	@include media(mobileUp) {
+        float: left;
+    	padding-right: 23px;
+    }
+    
+}

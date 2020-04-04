@@ -1,0 +1,60 @@
+$skillBarHeight:  18px;
+$skill-bar-radius: 0;
+
+.skillbar{
+	height:$skillBarHeight;
+	border-radius:$skill-bar-radius;
+	margin-top:10px;
+	display: block;
+	position: relative;
+	width: 500px;
+	background:#eee;
+	transition:0.4s linear;
+	transition-property:width, background-color;
+	&:nth-child(2) {
+		.skillbar-final {
+			background: #2196F3;
+		}
+	}
+	&:nth-child(3) {
+		.skillbar-final {
+			background: #f44336;
+		}
+	}
+
+	&:nth-child(4) {
+		.skillbar-final {
+			background: rgb(90, 104, 165);
+		}
+
+	}
+
+	&:nth-child(5) {
+		.skillbar-final {
+			background: rgb(230, 126, 34);
+		}
+
+	}
+}
+.skillbar-titulo{
+	height:$skillBarHeight;
+	border-top-left-radius:$skill-bar-radius;
+	border-bottom-left-radius:$skill-bar-radius;
+	background: rgba(0, 0, 0, 0.38);
+	width: 100px;
+	position: absolute;
+
+}
+.skillbar-titulo span{
+	display: block;
+    padding: 0 20px;
+    line-height: 17px;
+    color: $color_white;
+    font-size: 11px;
+}
+.skillbar-final{
+	height:$skillBarHeight;
+	border-radius:$skill-bar-radius;
+	width:0px;
+	@extend %bg-primary;
+}

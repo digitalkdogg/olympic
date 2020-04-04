@@ -1,0 +1,22 @@
+/*
+Theme Name: fhomeservices-child
+Version: 1.0
+Description: A child theme of fHomeServices
+Template: fhomeservices
+Author: Administrator
+*/
+@import url("../fhomeservices/style.css");
+/* Your awesome customization starts here */
+
+a, a:visited {
+	color: #a65910;
+}
+
+a:hover {
+	color: #a6a410;
+	cursor : pointer;
+}
+
+#header-main-fixed a h1, #header-main-fixed a {
+    color: #a65910;
+}

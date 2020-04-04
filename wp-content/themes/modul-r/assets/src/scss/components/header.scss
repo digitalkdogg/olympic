@@ -1,0 +1,233 @@
+.header-color {
+  background-color: $color__nav-background;
+}
+
+#masthead {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  transition: $animations__lenght;
+  
+  @media #{$mq__smaller-than-tablet} {
+    height: $head__height-responsive;
+    transform: inherit !important;
+    padding: 0;
+  }
+  
+  // UTILS && ANIMATIONS
+  // if has a featured image and is at the top of the page...
+  .has-featured-image.top & { transition: 1s;background-color: transparentize($color__nav-background, 0.1);}
+  
+  // if the page was scrolled shows a shadow under the header
+  .scrolled & { box-shadow: 0 3px 10px -5px  transparentize($color__black, 0.3);}
+  
+  // hides the logo in portrait header when the page is scrolled
+  .scrolled &.header-portrait  { transform: translateY(-#{$size__branding-height + $size__margin});}
+  
+  // the background image
+  .site-header-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  
+  
+  // Logo/site title container
+  .header-wrapper {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    @media #{$mq__smaller-than-tablet} {height: 100%;}
+    
+    .site-branding {
+      width: 100%;
+      height: $size__branding-height;
+      padding-top: $size__margin;
+  
+      @media #{$mq__smaller-than-tablet} {
+        text-align: left;
+        width: calc(100% - #{$hamburger__size * 2} );
+        & {
+          justify-content: flex-start !important;
+        }
+      }
+  
+      // Custom logo
+      .custom-logo-link {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    
+        .custom-logo {
+          object-fit: contain;
+          height: 66%;
+          max-width: 100%;
+          width: auto;
+      
+          @media #{$mq__smaller-than-tablet} {
+            max-height: $head__height-responsive - ($size__margin * 2);
+            width: auto;
+            margin: 0;
+          }
+        }
+      }
+  
+      &.has-custom-logo .site-logo {
+        height: 100%;
+      }
+      
+      &.has-header-text.has-custom-logo {
+        display: flex;
+        flex-direction: row;
+        
+        .site-logo {
+          margin-right: $size__margin;
+  
+          @media #{$mq__smaller-than-tablet} {width: auto;}
+        }
+        .custom-logo {object-position: right;}
+        
+        .header-text {
+          text-align: left;
+          margin-left: $size__margin;
+        }
+      }
+    }
+    
+    // Site title & description (no custom logo)
+    .header-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      .site-title,
+      .site-description {
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+  
+      .site-title {
+        font-size: 26px;
+        line-height: ($size__branding-height - ($size__margin * 2)) * .66;
+        @media #{$mq__smaller-than-tablet} {
+          line-height: ($head__height-responsive - $size__margin) * .66;
+        }
+      }
+  
+      .site-description {
+        display: inline-block;
+        color: white;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: ($size__branding-height - ($size__margin * 2)) * .33;
+        @media #{$mq__smaller-than-tablet} {
+          line-height: ($head__height-responsive - $size__margin) * .33;
+        }
+      }
+    }
+  }
+  
+  
+  //  PORTRAIT
+  &.header-portrait .header-wrapper {
+    
+    flex-direction: column;
+    
+    .site-branding {
+      @media #{$mq__smaller-than-tablet} {
+        padding-top: 0;
+      }
+      
+      .header-text {
+        text-align: center;
+        @media #{$mq__smaller-than-tablet} {
+          text-align: left;
+        }
+      }
+      
+      &.has-header-text.has-custom-logo {
+        justify-content: center;
+        margin-right: 0;
+      }
+    }
+    
+    .custom-logo {
+      margin-left: auto;
+      margin-right: auto;
+      @media #{$mq__smaller-than-tablet} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  
+  
+  // LANDSCAPE
+  &.header-landscape .header-wrapper {
+    flex-direction: row;
+    height: $size__nav-height;
+    @media #{$mq__smaller-than-tablet} {
+      height: 100%;
+    }
+    
+    .site-branding {
+      height: 100%;
+      padding-bottom: $size__margin;
+      box-sizing: border-box;
+      @media #{$mq__smaller-than-tablet} {
+        padding-top: $size__margin * .5;
+        padding-bottom: $size__margin * .5;
+      }
+      
+      .custom-logo {
+        object-position: left;
+        width: auto;
+      }
+      
+      &.has-header-text.has-custom-logo .site-logo {
+        width: auto;
+      }
+    }
+  
+    .main-navigation {
+      align-self: flex-end;
+    }
+    
+    .main-menu {
+      padding: 0 0 0 $size__padding-resp;
+      @media #{$mq__smaller-than-tablet} {
+        padding: 0 $size__padding-resp;
+      }
+    }
+  
+    .site-title {
+      font-size: ($size__nav-height - ($size__margin * 2)) * .6;;
+      line-height: ($size__nav-height - ($size__margin * 2)) * .7;
+    }
+  
+    .site-description {
+      font-size: ($size__nav-height - ($size__margin * 2)) * .3;
+      line-height: ($size__nav-height - ($size__margin * 2)) * .3;
+    }
+    
+  }
+  
+}
+
+
+
+// the wordpress admin bar fix
+@media screen and (max-width: 600px) {
+ body.logged-in > div:last-child {position: fixed !important;}
+}
+
+.admin-bar #masthead {
+  top: 32px;
+  @media screen and (max-width: 782px) { top: 46px; }
+}

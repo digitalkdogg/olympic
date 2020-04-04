@@ -1,0 +1,43 @@
+%nav-style {
+	@extend %bg-primary;
+	color: $color_white;
+	padding: 10px 20px;
+}
+
+.nav-links{
+	padding: 10px 0;
+	@extend %clear-section;
+}
+
+.nav-previous {
+	@extend %clear-section;
+	a {
+		@extend %nav-style;
+	}
+}
+
+.nav-next {
+	@extend %clear-section;
+	a {
+		@extend %nav-style;
+	}
+}
+
+nav.navigation.posts-navigation {
+    width: 100%;
+    padding: 1rem;
+}
+
+.comment-navigation .nav-previous, 
+.posts-navigation .nav-previous, 
+.post-navigation .nav-previous,
+.nav-next {
+	@include media(mobile) {
+		width: 100%;
+		margin-bottom: 1rem;
+		a {
+			display: block;
+    		text-align: center;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+ul.trail-items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+    	display: inline-block;
+    	padding-right: 10px;
+    	color: $color_black;
+        font-size: 0.85rem;
+        font-family : $font-primary;
+        &.trail-end {
+            opacity: 0.8;
+        }
+    	a {    		
+            color: $color_black;
+            &:hover {
+                @extend %color-primary ;
+            }
+    	}
+    	&:after {
+    		content: "\f105";
+		    margin-left: 10px;
+		    font-family: 'FontAwesome';
+    	}
+    	&:last-child {
+    		&:after {
+	    		content: "";
+    		}
+    	}
+    }
+}
+
+#breadcrumb {
+    margin-bottom: 2.5rem;
+}
+
+

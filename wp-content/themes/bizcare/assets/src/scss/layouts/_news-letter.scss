@@ -1,0 +1,28 @@
+.#{$prefix}-news-letter{
+	.wpcf7-form-control.wpcf7-text.wpcf7-email {
+	    height: 50px;
+	    border-radius: 0;
+	    float: left;
+	    width: calc(100% - 190px);
+	    &:focus {
+	    	outline: none;
+	    	box-shadow: none;
+	    }
+	}
+    p {
+        margin-bottom: 0;
+    }
+}
+.wpcf7-submit {
+    @extend %bg-primary;
+    border: 0;
+    color: $color_white;
+    padding: 13px;
+    width: 190px;
+    cursor: pointer;
+    line-height: 1.5;
+    @include transition(all .3s);
+    &:hover {
+    	background: darken($color_primary, 10%);
+    }
+}

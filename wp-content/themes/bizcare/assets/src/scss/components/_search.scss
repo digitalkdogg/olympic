@@ -1,0 +1,13 @@
+.search-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+    	color: $color_white;
+    	@include transition(all .3s);
+    	padding: 4px 10px;
+    	&:hover {
+    		@extend %color-primary;
+    	}
+    }
+}

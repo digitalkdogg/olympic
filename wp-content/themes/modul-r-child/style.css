@@ -1,0 +1,94 @@
+/*
+Theme Name: Modul-R-child
+Version: 1.0
+Description: A child theme of Modul-R
+Template: modul-r
+Author: Administrator
+*/
+@import url("../modul-r/style.css");
+/* Your awesome customization starts here */
+
+a, a:visited {
+	color: #8b7f27;
+}
+
+a:hover {
+	color: #8b273d;
+}
+
+header#masthead {
+	background: #27548B;
+	position: relative;
+	top:-20px;
+	padding:10px;
+	text-align:center;
+}
+
+header#masthead h1.site-title a {
+	color: #ffd700;
+}
+
+header#masthead nav#site-navigation li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+header#masthead nav#site-navigation a:hover {
+ 	color:#ffd700;
+}
+
+@media only screen and (max-width: 768px) {
+
+	header#masthead .menu-resp button.c-hamburger {
+		border:1px solid white;
+	}
+
+	header#masthead button.c-hamburger i {
+		background: #ffd700;
+	}
+
+	header#masthead button.c-hamburger span.line {
+    	position: relative; 
+    	width: 100%;
+    	border-bottom: 1px solid white;
+    	display: block;
+	}
+
+	header#masthead.active button.c-hamburger span.line.one {
+		transform: rotate(45deg);
+	}
+
+	header#masthead.active button.c-hamburger span.line.three {
+		transform: rotate(115deg);
+	}
+
+
+
+	header#masthead nav#site-navigation {
+		display: none;
+	}
+
+	header#masthead div.menu-resp {
+		right:unset; 
+		left:5px;
+		top:20px;
+	}
+
+body .menu-resp button.c-hamburger i, body .menu-resp button.c-hamburger i::after, body .menu-resp button.c-hamburger i::before, .menu-resp button:focus, .menu-resp button:hover {
+    /*background: #ffd700 ;
+    filter: unset; */
+}
+
+
+	header#masthead.active nav#site-navigation {
+		display: block;
+    	position: absolute;
+    	top: 0; 
+	}
+
+	header#masthead nav#site-navigation li {
+		display: block;
+		text-align:left;
+	}
+}

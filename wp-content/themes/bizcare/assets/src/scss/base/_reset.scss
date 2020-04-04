@@ -1,0 +1,41 @@
+html {
+    font-size: $root-font-size; 
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	height: auto;
+    max-width: 100%;
+}
+
+%clear-section {
+	&:after,
+	&:before {
+		content: '';
+		display: table;
+		clear: both;
+	}	
+}
+
+%bg-primary {
+	background: $color_primary;
+}
+
+%border-primary {
+	border-color: $color_primary;
+}
+
+%color-primary {
+	color: $color_primary;
+}
+
+%widget-title {
+	font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}

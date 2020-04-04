@@ -1,0 +1,38 @@
+.contact-section {
+    .contact-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translate(0, -50%);
+        background: $color_white;
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+        @extend %color-primary;
+    }
+
+    .bt-contact-info {
+        padding-left: 76px;
+    }
+}
+
+.bt-contact-wrapper {
+    padding-right: 25px;
+    > div {
+        border-right: 2px solid $color_white;
+        @include media(mobile) {
+            border-right: none;
+        }
+    }
+    &:last-child {
+        > div {
+            border-right: 0;
+        }
+    }
+    span {
+        font-size: 0.85rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+} 

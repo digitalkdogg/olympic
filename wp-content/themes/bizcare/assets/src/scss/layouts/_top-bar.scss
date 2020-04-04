@@ -1,0 +1,14 @@
+.#{$prefix}-top-bar {
+    border-bottom: 1px solid  $border-color;
+    
+    .#{$prefix}-top-bar-opening-hours {
+		li {
+		    padding: 0 16px;
+		    border-right: 1px solid  $border-color;
+		    font-weight: 600;
+		    &:first-child {
+		    	padding-left: 0;
+		    }
+		}
+	} 
+}

@@ -1,0 +1,60 @@
+.evt-no-sidebar {
+	div#primary {
+	    width: 100%;
+	    padding: 0;	  
+	    @include media(mobile) {
+	    	padding: 0 16px;	  
+	    }  
+	}
+	#secondary {
+		display: none;
+	}
+}
+
+$primary-width: 65%;
+$secondary-width: 35%;
+
+.evt-left-sidebar {
+	#primary {
+		width: $primary-width;	  
+	    float: right;
+	    padding-left: 30px;
+	    order: 2;
+	    @include media(mobile) {
+	    	padding-left: 16px; 
+	    	padding-right: 16px; 
+	    	width: 100%;	
+	    	order: 1;
+	    }  
+	}
+	#secondary {
+		width: $secondary-width;	 
+	    float: left;
+	    order: 1;
+	    @include media(mobile) {
+	    	width: 100%;
+	    	order: 2;	 
+	    }  
+	}
+}
+.evt-right-sidebar {
+	div#primary {
+		width: $primary-width;	  
+	    float: left;
+	    padding-right: 30px;
+	    order: 1;
+	    @include media(mobile) {
+	    	padding-left: 16px; 
+	    	padding-right: 16px; 
+	    	width: 100%;	
+	    }  
+	}
+	#secondary {
+		width: $secondary-width;	 
+	    float: right;
+	    order: 2;
+	    @include media(mobile) {
+	    	width: 100%;
+	    }  
+	}
+}

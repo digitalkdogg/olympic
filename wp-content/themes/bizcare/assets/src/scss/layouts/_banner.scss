@@ -1,0 +1,37 @@
+.#{$prefix}-banner-slider{
+	position: relative;
+    height: calc(100vh - 80px);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media(mobile) {
+        height: 58vh;   
+    }
+    .#{$prefix}-banner-caption {
+    	color: $color_white;
+    	max-width: 700px;   
+        @include media(mobile) {
+            padding: 0 26px;
+            .bt-small-btn {
+                &:last-child {
+                    display: none;
+                }
+            }
+        }     
+    	h2 {
+    		font-size: 2.6rem;
+    		font-weight: 600;
+    		text-transform: uppercase;
+            @include media(mobile) {
+                font-size: 1.6rem;
+            }
+    	}
+    }    
+}
+
+
+.#{$prefix}-inner-page-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

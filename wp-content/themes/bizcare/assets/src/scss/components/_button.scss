@@ -1,0 +1,128 @@
+%btn-hover {
+	text-decoration: none;
+	color: $color_white !important; 
+}
+%btn-common-style {
+    // border-radius: 25px;
+    position: relative;
+    text-transform: uppercase;
+    @include transition(all .3s);
+}
+
+%common-arrow-btn {
+    content: "\f061";
+    font-family: fontAwesome;
+    padding-left: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    @include transition(all .3s);
+}
+
+%btn-after-hover {
+    content: '\f00c';
+    color: $color_white !important; 
+}
+
+.#{$prefix}-btn-primary {
+    color: $color_white ;   
+    @extend %btn-common-style;
+    &:hover {
+    	background: darken($color_primary, 10%);
+    	@extend %btn-hover;
+        &:after {
+            @extend %btn-after-hover;
+        }
+    }
+    &:after {        
+        color: rgba(255, 255, 255, 0.38);
+        @extend %common-arrow-btn;
+    }
+}
+
+.#{$prefix}-small-btn {
+	padding: 12px 35px;
+}
+
+.#{$prefix}-arrow-btn {
+    position: absolute;
+    bottom: -20px;
+    @extend %bg-primary;
+    color: $color_white;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    @include transition(all .3s);
+    @extend %center-content;
+    &:hover {
+    	@extend %btn-hover;
+    }
+    &:after {
+    	content: "";
+	    background: $color_secondary;
+	    height: 20px;
+	    position: absolute;
+	    width: 100%;
+	    bottom: 0;
+	    z-index: 1;	   
+    }
+}
+
+.#{$prefix}-btn-bg-transparent,
+.read-more-text a {
+    border: 1px solid;
+    @extend %border-primary;
+    @extend %color-primary;
+    @extend %btn-common-style;
+    font-size: 0.8rem;
+    &:hover {
+        @extend %btn-hover;
+        @extend %bg-primary;
+        &:after {
+            @extend %btn-after-hover;
+        }
+    }
+    &:after {        
+        @extend %color-primary;
+        @extend %common-arrow-btn;
+    }
+}
+
+.read-more-text {
+    padding: 1.5rem 0;
+    a {
+        padding: 14px 37px 14px 20px;
+    }
+} 
+
+.search-submit {
+    border: 1px solid;
+    @extend %bg-primary;
+    color: $color_white;
+    @extend %btn-common-style;
+    &:hover {
+        @extend %btn-hover;
+        @extend %bg-primary;
+        &:after {
+            @extend %btn-after-hover;
+        }
+    }
+}
+
+#submit {
+    border: 0;
+    @extend %bg-primary;
+    color: $color_white;
+    @extend %btn-common-style;
+    padding: 12px 30px;
+    cursor: pointer;
+    &:hover {
+        @extend %btn-hover;
+        @extend %bg-primary;        
+    }
+}
+
+.bt-btn-transparent {
+    background: transparent;
+    border: 1px solid $color_primary;
+}

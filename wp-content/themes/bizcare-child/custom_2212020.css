@@ -1,0 +1,370 @@
+/* colors section
+// blue : 27548b
+maron ; 8b273d
+yellow : ffd700;
+
+*/
+
+
+body {
+	color:#333;
+	font-size:18px;
+	line-height: 1.75;
+    font-family: sans-serif;
+}
+
+body .container-fluid {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+a, a:visited {
+	color: #27548b;
+}
+
+a:hover {
+	color : #8b273d;
+}
+
+.bt-bg-primary {
+    color:white;
+    background : #27548b;
+}
+
+.bt-bg-primary:hover {
+    color:white;
+    background : #8b273d;
+}
+
+a.skip-link.screen-reader-text {
+    display: none;
+}
+
+.bg-primary, .bt-bg-primary, .bt-has-overlay-primary:after, .bt-arrow-btn, .bt-btn-bg-transparent:hover, .read-more-text a:hover, .search-submit, .search-submit:hover, #submit, #submit:hover, .bt-main-menu > ul > li:not(.has-mega-menu) > ul.sub-menu:not(.mega-menu) li:hover, .bt-prev-arrow, .bt-next-arrow, .ribbon span, .skillbar-final, .loader-inner, .scroll-top, .nav-previous a, .nav-next a, .bt-service-box:hover .fa, .fa.rounded-icon, .service-style-v2 .bt-service-box:hover .fa, .bt-feature-icon:hover, .wpcf7-submit {
+    background: #27548b;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.bt-color-primary, .bt-btn-bg-transparent, .read-more-text a, .bt-btn-bg-transparent:after, .read-more-text a:after, .bt-top-social-link li a, .site-logo h1 a:hover, .bt-main-menu ul ul.sub-menu li a:hover, .search-icon a:hover, .entry-title a:hover, .slick-dots li.slick-active button, .bt-link-text:hover, .entry-meta a:hover, ul.trail-items li a:hover, .loader, .bt-about-section .about-right .about-box-small h4 a:hover, .bt-feature-icon .fa, .contact-section .contact-icon, aside#secondary ul li:hover a, aside#secondary ul li:hover:before, .evt-masonry .entry-content h2 a:hover, .home.blog #main .entry-content h2 a:hover, body.blog #main .entry-content h2 a:hover, .infinite-wrap .entry-content h2 a:hover {
+    color: #27548b;
+}
+
+header#masthead {
+    color: white;
+}
+
+header#masthead .bt-top-bar {
+    border-bottom: 3px solid #fff;
+    background: #27548b;
+}
+
+#masthead .bt-top-bar li {
+    font-size: 1em;
+}
+
+header#masthead.is-sticky .bt-top-bar {
+    border-bottom: 3px solid #fff;
+    background: #27548b;
+}
+
+header#masthead i.fa.fa-phone {
+    margin: 0 5px;
+}
+
+header#masthead div#phone-num a#phonelink {
+    color: white;
+}
+
+#bt-nav-bar-section #primary-menu a:hover {
+    color: #8b273d;
+}
+
+#masthead i.fa:before {
+    color: white;
+}
+
+.container .bt-btn-primary, .container .bt-btn-primary:after  {
+	color:white;
+}
+
+.wrapper.page-inner-title.no-inner-img {
+    background-color: #333;
+}
+
+.container .bt-contact-wrapper i.fa {
+    background: unset;
+    border: 3px solid white;
+}
+
+.container .bt-contact-wrapper i.fa:before {
+    color: #ffd700;
+}
+
+#masthead #sticky-wrapper div.bt-logo {
+    width:100%;
+}
+
+.header-light .site-logo p {
+    color: #27548b;
+}
+
+section.bt-top-bar a#contact-us.bt-bg-primary {
+    background-color: #ffd700;
+    color:black;
+}
+
+section.contact-section.bt-bg-primary:hover {
+    background: #27548b;
+}
+
+section.bt-top-bar #contact-us:after {
+    color: black;
+}
+
+section.bt-top-bar a#contact-us.bt-bg-primary:hover {
+    background:#8b273d;
+}
+
+div.scroll-top {
+    background-color: #ffd700;
+    color: black;
+}
+
+div.scroll-top:hover {
+    background-color: #27548b;
+    color: white;
+}
+
+
+div.footer-bottom .site-info.col-6.text-right.text-muted {
+    text-align:left !important; 
+}
+
+div.footer-bottom .copyright-text {
+	margin-top:35px;
+}
+
+.is-sticky .bt-logo .site-description {
+    font-size: 1em;
+}
+
+#bt-nav-bar-section nav.bt-main-menu {
+	margin:0 10px;
+}
+
+#bt-nav-bar-section .bt-main-menu > ul > li a {
+    padding: 2px;
+}
+
+header#masthead p.site-description {
+    font-size: 1.2em;
+}
+
+.header-light .site-logo a {
+    color: #27548b;
+}
+
+.header-light .site-logo a:hover {
+    color: #8b273d;
+}
+
+nav.bt-main-menu.d-none.d-md-block.float-right {
+    text-align: right;
+    width: 105%;
+}
+
+div#phone-num {
+    width:49%;
+    margin-left:5px;
+}
+
+div#contact-us-wrapper {
+    width: 49%;
+    text-align:right;
+}
+
+header#masthead a#contact-us {
+    padding: 12px 30px;
+}
+
+div#lefttrix {
+    width: 20%;
+    display: inline-block;
+}
+
+div#righttrix {
+    width: 79%;
+    margin-left:1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 385px) {
+   header#masthead a#contact-us {
+        padding:8px 18px;
+        font-size:.7em;
+    }
+
+#masthead .bt-top-bar li {
+    font-size: initial;
+}
+
+div#contact-us-wrapper {
+	display:flex;
+	max-height:60px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+    nav.bt-main-menu.d-none.d-md-block.float-right {
+        text-align: right;
+        width: 55%;
+    }
+
+}
+
+.bt-nav-bar-section .container {
+	padding-right:5px;
+	padding-left: 0;
+}
+
+.bt-small-btn {
+    padding: 12px 30px;
+}
+
+div#sticky-wrapper {
+    overflow: hidden;
+}
+
+div.is-sticky section.bt-nav-bar-section {
+    border-bottom: 3px solid #27548b;
+}
+
+header#masthead.is-sticky section.bt-top-bar.py-3 {
+    position: fixed;
+    top: 0px;
+    z-index: 100000;
+    width: 100%;
+		padding-top:1vh !important;
+		padding-bottom:1vh !important;
+}
+
+header#masthead img.custom-logo {
+	width:200px;
+}
+
+
+#sticky-wrapper.is-sticky section.bt-nav-bar-section {
+    top: 70px !important;
+}
+
+header#masthead .is-sticky img.custom-logo {
+    width: 80px;
+}
+
+#sticky-wrapper {
+    height: auto;
+}
+
+#sticky-wrapper.is-sticky {
+    height: 80px;
+}
+
+div.wp-block-button a {
+    background: #27548b;
+    border-radius:0;
+}
+
+div.wp-block-button a:hover {
+    background: #8b273d;
+    color:white;
+}
+
+body.home .banner-section .bt-banner-caption .bt-btn-group a.bt-small-btn.bt-btn-primary {
+    display:none;
+}
+
+.sharedaddy {
+    display: none;
+}
+
+.everest-forms label {
+    font-size: 16px;
+}
+
+.everest-forms .evf-field-container .evf-frontend-row .evf-frontend-grid .evf-field.everest-forms-invalid>label {
+    color: #8b273d;
+}
+
+.everest-forms .evf-field-container .evf-frontend-row .evf-frontend-grid .evf-field.everest-forms-invalid input.evf-error {
+    border-color: #8b273d;
+}
+
+.everest-forms .evf-field-container .evf-frontend-row .evf-frontend-grid .evf-field.everest-forms-validated input.input-text {
+    border-color: #27548b;
+}
+
+.everest-forms {
+    max-width: 70%;
+    left: 15%;
+    position: relative;
+}
+
+.everest-forms .everest-forms-notice--success {
+    background-color: #27548b;
+}
+
+.wp-block-column a.link-card-poster {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.wp-block-cover__inner-container {
+    text-align: center;
+}
+
+.bt-about-section .about-box-small:hover {
+    cursor : pointer;
+}
+
+.bt-about-section .about-box-small .bg-white:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+.wp-block-cover {
+    height: 85%;
+}
+
+body.home .about-right .about-box-small .bt-text-light {
+    color: black;
+}
+
+.banner-section .bt-banner-slider .bt-banner-caption {
+    color: #fff;
+		font-weight: bold;
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width: 767px) {
+	.banner-section .bt-banner-slider .bt-banner-caption {
+		padding: 0 15%;
+	}
+}
+
+.banner-section .bt-banner-slider.bt-has-overlay:after {
+    background: rgba(0,0,0,0.5);
+}
+
+.banner-section .bt-banner-slider .bt-banner-caption h2.mb-4 {
+	display:none;
+}

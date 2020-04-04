@@ -1,0 +1,86 @@
+/*PRELOADING------------ */
+.has-preloader {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#overlayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background: $color_white;
+  height: 100vh;
+  z-index: 99999;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 99999999999999;
+  border: 4px solid;
+  @extend %border-primary; 
+  @extend %color-primary;
+  top: 50%;
+  animation: loader 2s infinite ease;
+  left: 50%;
+  transform: translate(50%, -50%);
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  @extend %bg-primary;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+
+
+
+

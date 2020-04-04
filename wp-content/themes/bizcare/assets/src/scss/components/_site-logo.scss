@@ -1,0 +1,31 @@
+.site-logo {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	h1 {	    
+	    font-size: 2rem;
+	    margin: 0;
+	    padding: 0;
+	    font-weight: bold;
+	    @include media(mobile) {
+           font-size: 1.6rem;
+        }
+	    a {
+	    	color: $color_white;
+	    	@include transition(all .3s);
+	    	&:hover {
+	    		text-decoration: none;
+	    		@extend %color-primary;
+	    	}
+	    }
+	}
+	p {
+		font-size: 0.85rem;
+	    margin: 0;
+	    padding: 0;
+	    color: $color_white;
+	}
+	img {
+		max-weight:	130px;
+	}
+}

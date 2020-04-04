@@ -1,0 +1,46 @@
+.#{$prefix}-testimonials-section {
+	position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bt-testimonials-box {
+    @include transition(all .3s);
+    position: relative;
+    &:hover {
+        box-shadow: 0 0 10px #676767;
+    }    
+	p {
+		padding: 0 40px;
+	}
+    .fa {
+	    position: absolute;
+	    font-size: 30px;
+	    opacity: .3;
+	    &.top-quote {
+			left: 0;
+		    top: -9px;
+		}
+
+		&.bottom-quote {
+			right: 0;
+		}
+	}
+	.testomonials-image-wrapper {
+	    position: absolute;
+	    height: 64px;
+	    width: 64px;
+	    border-radius: 50%;
+	    overflow: hidden;
+	    left: 10px;
+	    bottom: 10px;
+	    img{
+	    	height: 100%;
+	    }
+	}
+}
+
+
+

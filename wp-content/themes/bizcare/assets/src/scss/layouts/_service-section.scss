@@ -1,0 +1,78 @@
+$icon-size: 80px;
+%icon-style-service {   
+    height: $icon-size;
+    width: $icon-size;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include transition(all .3s);  
+}
+.#{$prefix}-service-box {
+    a {
+        color: $color_black;
+        display: block;
+        padding: 1rem;
+        &:hover {
+            text-decoration: none;
+        }
+       .fa {
+            @extend %icon-style-service;
+        }
+    }
+    
+    &:hover {
+        .fa {
+            @extend %bg-primary;
+            color: $color_white;
+        }
+        h3 {
+            color: $color_secondary;
+        }
+    }
+}
+
+.fa.rounded-icon {
+    @extend %icon-style-service;  
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    @extend %bg-primary; 
+    color: $color_white;
+} 
+
+.service-style-v2 {
+   .#{$prefix}-service-box {
+        a {
+            position: relative; 
+            text-align: left; 
+            padding-left: 110px;          
+           .fa {
+                @extend %icon-style-service;
+                position: absolute;
+                left: 1rem;
+                margin: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            } 
+        }  
+
+        &:hover {
+            .fa {
+                @extend %bg-primary;
+                color: $color_white;
+            }
+            h3 {
+                color: $color_secondary;
+            }
+        }      
+       
+    } 
+}
+
+
+

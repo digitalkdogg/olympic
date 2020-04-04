@@ -1,0 +1,112 @@
+$color_facebook: #4267b2;
+$color_youtube: #f00;
+$color_twitter: #1ea1f2;
+$color_linkedin: #0077b5;
+$color_link_dark: #000;
+.#{$prefix}-social-nav {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			a {
+				span {
+					display: none;
+				}
+				&:after {
+					font-family: fontAwesome;
+				}
+			}
+		}
+	}
+}
+
+.#{$prefix}-top-social-link {
+	text-align: right;
+	li {
+		a {
+		    @extend %color-primary;
+		    background: transparent;
+    	    padding: 7px 10px;
+		    &:hover {
+		    	@include transition(all .3s);
+		    	color: $color_black;
+		    }
+		}
+		a[href*="facebook.com"] { 
+			color: $color_facebook;
+		}
+		a[href*="youtube.com"] { 
+			color: $color_youtube;
+		}
+		a[href*="twitter.com"] {
+			color: $color_twitter;
+		}
+		a[href*="linkedin.com"] { 
+			color: $color_linkedin;
+		}
+	}
+} 
+
+.#{$prefix}-team-social-link {
+	margin: 10px 0;
+	@include transition(all .3s); 	    
+	opacity: 0.2;
+	a {
+		&:hover {
+			text-decoration: none;
+		}  
+	}
+	a[href*="facebook.com"] {
+		.fa {
+			background: $color_secondary;
+			&:hover {
+				background: darken($color_facebook, 10%);
+			}
+		}
+	}
+	a[href*="youtube.com"] {
+		.fa {
+			background: $color_secondary;
+			&:hover {
+				background: darken($color_youtube, 10%);
+			}
+		}
+	}
+	a[href*="twitter.com"] {
+		.fa {
+			 background: $color_secondary;
+			&:hover {
+				background: darken($color_twitter, 10%);
+			}
+		}
+	}
+	a[href*="linkedin.com"] {
+		.fa {
+			background: $color_secondary;
+			&:hover {
+				background: darken($color_linkedin, 10%);
+			}
+		}
+	}
+	.fa {
+		 background: $color_secondary;
+	    color: $color_white;
+	    width: 30px;
+	    height: 30px;
+	    @extend %center-content;	
+	    @include transition(all .3s); 	    
+	}
+
+}
+.team-box-wrapper {	
+	&:hover {
+		.#{$prefix}-team-social-link {
+			opacity: 1;
+		}	
+	}
+}
+
+
+

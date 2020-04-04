@@ -1,0 +1,10 @@
+.#{$prefix}-link-text {
+    color: $color_black;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include transition(all .3s);
+    &:hover {
+	    @extend %color-primary;
+    	text-decoration: none;
+    }
+}

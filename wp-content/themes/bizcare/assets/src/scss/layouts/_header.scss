@@ -1,0 +1,31 @@
+%color-black- {
+	color: $color_black;
+}
+.header-light {
+	.bt-nav-bar-section {
+		background: $color_white;
+	}
+	.site-logo {
+		a,
+		p {
+			@extend %color-black-;
+		}
+	}
+	.bt-main-menu > ul > li a {
+		@extend %color-black-;
+	}
+
+	.search-icon a {
+		@extend %color-black-;
+	}
+}
+
+.bt-nav-bar-section {
+	background: $color_secondary;
+}
+
+.bt-nav-bar-section {
+	@include media(mobile) {
+		padding: 10px 0;
+	}
+}

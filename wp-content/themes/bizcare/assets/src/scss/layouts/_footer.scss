@@ -1,0 +1,56 @@
+.site-footer {
+	color: darken($color_white, 15%);
+	font-size: 0.85rem;
+	a {
+		color: darken($color_white, 15%);
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style: none;
+			font-size: 0.85rem;
+			padding-bottom: 10px;
+			padding-left: 15px;
+			position: relative;    		
+			a {
+				color: darken($color_white, 15%);
+				@include transition(all .3s);
+				&:hover {
+					color: $color_white;
+				}
+			}
+			&:before {
+			    content: "\f105";
+			    font-family: 'fontAwesome';
+			    left: 0;
+			    position: absolute;
+			    top: 2px;
+			}
+		}
+	}
+}
+
+body:not(.home) {
+	.site-footer {
+		margin-top: 1.5rem;
+	}
+}
+
+span.cat-count {
+    float: right;
+}
+
+.footer-bottom {
+	.copyright-text,
+	.site-info {
+		p {
+			margin: 0;
+			font-size: 0.8rem;
+		    color: $color_white;
+		}
+		a {
+			color: darken($color_white, 15%);
+		}
+	}
+}

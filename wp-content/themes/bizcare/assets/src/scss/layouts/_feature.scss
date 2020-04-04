@@ -1,0 +1,36 @@
+.#{$prefix}-feature-bagkground-image{
+	position: relative;   
+    background: url('../../src/img/office.jpg');
+    min-height: 400px;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.bt-feature-icon {
+    position: absolute;
+    left: 0;
+    background: $color_white;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    @include transition(all .3s);
+    .fa {
+        font-size: 2rem;
+        @extend %color-primary;
+    }
+    &:hover {
+        @extend %bg-primary;
+        .fa {
+            color: $color_white !important;
+        }
+    }
+}
+
+.feature-content {
+    padding-left: 90px;
+    min-height: 80px;
+}
