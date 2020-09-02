@@ -10,9 +10,7 @@ body {
 	color:#333;
 	font-size:18px;
 	line-height: 1.75;
-  font-family: sans-serif;
-	/*width:103%; */
-	overflow-x:hidden;
+    font-family: sans-serif;
 }
 
 body .container-fluid {
@@ -136,10 +134,6 @@ section.bt-top-bar a#contact-us.bt-bg-primary:hover {
     background:#8b273d;
 }
 
-section.bt-about-section.bg-light {
-    border-bottom: 1px solid #eee;
-}
-
 div.scroll-top {
     background-color: #ffd700;
     color: black;
@@ -152,7 +146,7 @@ div.scroll-top:hover {
 
 
 div.footer-bottom .site-info.col-6.text-right.text-muted {
-    text-align:left !important;
+    text-align:left !important; 
 }
 
 div.footer-bottom .copyright-text {
@@ -196,8 +190,6 @@ div#phone-num {
 div#contact-us-wrapper {
     width: 49%;
     text-align:right;
-		position: relative;
-	  right: 10px;
 }
 
 header#masthead a#contact-us {
@@ -265,8 +257,6 @@ header#masthead.is-sticky section.bt-top-bar.py-3 {
     width: 100%;
 		padding-top:1vh !important;
 		padding-bottom:1vh !important;
-		height:100px;
-		z-index:1000;
 }
 
 header#masthead img.custom-logo {
@@ -377,162 +367,4 @@ body.home .about-right .about-box-small .bt-text-light {
 
 .banner-section .bt-banner-slider .bt-banner-caption h2.mb-4 {
 	display:none;
-}
-
-.testimonals .person {
-    display:flex;
-   margin:10px 0;
-   font-size:1.3em;
-   font-weight:bold;
-}
-.testimonals .person .icon {
-    background: #27548b;
-    color: white;
-    border-radius: 100%;
-    width: 50px;
-    text-align: center;
-    height:50px;
-    box-shadow: 1px 1px 0px #000;
-    text-shadow: 1px 2px 1px #000;
-}
-
-.testimonals .person .name {
-    margin:0 10px;
-}
-
-.testimonals .review-wrapper .rerow{
-    display:flex;
-}
-
-@media only screen and (max-width: 767px) {
-    .testimonals .review-wrapper .rerow{
-        display:block;
-    }
-}
-
-.testimonals .review-wrapper .review {
-    margin: 10px;
-    background: rgba(255,255,255,0.7);
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    z-index:1;
-    max-width:45%;
-}
-
-@media only screen and (max-width: 767px) {
-    .testimonals .review-wrapper .review {
-        width: 100%;
-        max-width:95%;
-    }
-}
-
-.testimonals .review-wrapper {
-    padding:10px 10%;
-    background:#ccc;
-    color:white;
-    background: url('img/testimonal_bg2.jpg'); 
-    background-size: cover;
-    background-position: center;
-}
-
-@media only screen and (max-width: 767px) {
-    .testimonals .review-wrapper {
-        background-position: left;
-    }
-}
-
-div#section.testimonals .review-wrapper {
-    background:url('img/home_testimonial_bg.jpg');
-    background-position: bottom;
-}
-
-.testimonals .overlay {
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    left: 0;
-}
-
-@media only screen and (max-width: 767px) {
-    .testimonals .overlay {
-       display:none; 
-    }
-}
-
-.testimonals i.fa-star.full {
-    color:#ffd700;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.testimonals .review-wrapper .review.full-width {
-    max-width: 95%;
-}
-
-.wrapper.page-inner-title .city-wrapper {
-    width: 100%;
-    height: 105px;
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-    top: 0;
-    padding:0 10%;
-}
-
-.city-wrapper i {
-    font-size: 3em;
-    color: rgba(255,255,255,0.1);
-    margin:35px 20px;
-    font-style: oblique;
-}
-
-@media only screen and (max-width: 767px) {
-    .city-wrapper i {
-        margin:35px 0px;
-    }
-}
-
-.city-wrapper i.num-0 {
-    font-size:3.5em;
-    transform: rotateY(145deg);
-}
-.city-wrapper i.num-1 {
-    font-size:2.5em;
-}
-.city-wrapper i.num-2 {
-    font-size:3em;
-}
-.city-wrapper i.num-3 {
-    font-size:1.5em;
-    transform: rotateY(145deg);
-}
-.city-wrapper i.num-4 {
-    font-size:1.7em;
-    transform: rotateY(145deg);
-}
-
-.city-wrapper i.num-5 {
-    font-size:1.4em;
-}
-
-.city-wrapper i.num-6 {
-    font-size:2em;
-}
-
-.city-wrapper i.num-7 {
-    font-size:1.5em;
-    transform: rotateY(145deg);
-}
-
-.city-wrapper i.num-8 {
-    font-size:2.1em;
-}
-
-.city-wrapper i.num-9 {
-    font-size:3.1em;
-}
-
-.city-wrapper i.num-10 {
-    font-size:3.5em;
-    transform: rotateY(145deg);
 }

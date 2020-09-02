@@ -2,7 +2,7 @@ var $ = jQuery
 
 jQuery(function($){
 
-	/* @todo:
+	/* @todo: 
 		Make feature section with 2 box to contact and schedule
 		Make tag line blue - done
 		fine better way to do the contact us page
@@ -23,11 +23,6 @@ jQuery(function($){
 				$('div.site-logo').removeClass('col-8');
 
 				$('.evt-header-wrap .l-0.d-none').attr('id', 'phone-num');
-				let phonenumdiv = $('#phone-num').find('.d-inline-block.fs-7');
-				let phonenum = $(phonenumdiv).text().trim();
-				$(phonenumdiv).empty();
-			  $(phonenumdiv).html('<i class="fa fa-phone bt-color-primary"></i><a id = "phonelink" href = "tel://' + phonenum + '">' + phonenum + '</a>');
-				$('<li />', {'text': 'H.I. #2099', 'class': 'd-inline-block fs-7 no-border-right'}).insertAfter(phonenumdiv)
 				$('header#masthead .bt-top-bar .bt-appointment-btn').attr('id', 'contact-us');
 				$('header#masthead .bt-top-bar .bt-appointment-btn').parent().attr('id', 'contact-us-wrapper')
 
@@ -70,7 +65,7 @@ jQuery(function($){
 						// make the feature section happen with 2 boxes one for contact us and one for schedule now.
 					}
 				})//end doc ready
-
+				
 
 
 				$('<div />', {
@@ -90,33 +85,9 @@ jQuery(function($){
 				$('#masthead .container').addClass('container-fluid')
 				$('#masthead .container.container-fluid').removeClass('container')
 
-				$('.footer-bottom .site-info').html('<a href="https://www.nachi.org/verify.php?nachiid=nachi19101524" target="_blank"><img src="https://www.nachi.org/webseals/sb-v2-nachi19101524.gif" width="98" height="102" alt="Certified by the International Association of Certified Home Inspectors" border="0" /></a>');
-
 				$(window).resize(function () {
 					$.fn.olympic.adjust_header_height();
 				})
-
-			//	if ($('#content.testimonal-template').length > 0) { 
-					
-					$('.testimonals .overlay').each(function () {
-						var target = $(this).attr('data-ele')
-						$(this).css({'height': $('.'+target).height()+'px'})
-					})
-			//	}
-
-				/*$('.wrapper.page-inner-title').each(function () {
-					$('<div />', {
-						'class':'city-wrapper'
-					}).appendTo($(this))
-
-					for(var i =0; i<=10; i++) {
-						$('<i />', {
-							'class':'fa fa-home num-'+i
-						}).appendTo($(this).find('.city-wrapper'))
-					}
-				}) */
-
-				
 			})
 
 
@@ -134,7 +105,7 @@ jQuery(function($){
 			return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 		},
 		'adjust_header_height': function () {
-			var dynamicheight;
+			var dynamicheight; 
 			if ($(window).width > 768) {
 				dynamicheight = $('.bt-nav-bar-section').height();
 			} else {
@@ -168,7 +139,7 @@ jQuery(function($){
 				})
 
 				//adds the hover effect to the submit button
-				$(this).hover(function () {
+				$(this).hover(function () {							
 					$(this).css({'background':'#ffd700', 'color': '#333'})
 				}, function () {
 					$(this).css({'background':'#27548b', 'color': 'white'})
