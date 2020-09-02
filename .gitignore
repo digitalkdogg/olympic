@@ -6,6 +6,7 @@
 wp-content/*
 !wp-content/themes/
 wp-admin/*
+wp-includes/*
 # ignore these plugins
 wp-content/plugins/hello.php
 
