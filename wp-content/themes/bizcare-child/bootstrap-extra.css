@@ -1,3 +1,11 @@
+.bg-light-gray {
+    background: #eee;
+}
+
+.bg-white-transparent {
+	background:rgba(255,255,255,0.7);
+}
+
 .rounded-5 {
 	border-radius:5px
 }
@@ -82,4 +90,14 @@
 
 .no-border-bottom {
     border-bottom: none !important;
+}
+
+.padding-top-bot-10 {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.padding-left-right-15per {
+	padding-left:15%;
+	padding-right:15%;
 }
