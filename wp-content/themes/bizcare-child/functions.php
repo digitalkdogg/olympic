@@ -3,11 +3,11 @@
 function load_my_script(){
     wp_register_script(
         'my_script',
-        get_stylesheet_directory_uri() . '/js/olympic_2212020.js',
+        get_stylesheet_directory_uri() . '/js/olympic_220121.js',
         array( 'jquery' )
     );
     wp_enqueue_script( 'my_script' );
-    wp_enqueue_style( 'cusotm', get_stylesheet_directory_uri() . '/custom_2212020.css' );
+    wp_enqueue_style( 'cusotm', get_stylesheet_directory_uri() . '/custom_220121.css' );
     wp_enqueue_style( 'bootstrap-extra', get_stylesheet_directory_uri() . '/bootstrap-extra.css' );
 
 }

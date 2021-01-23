@@ -96,6 +96,11 @@ jQuery(function($){
 					$.fn.olympic.adjust_header_height();
 				})
 
+				//if ($.fn.olympic.is_mobile()==true) {
+					var nav = $('nav #primary-menu')
+					$('.mr-mobile-menu').html($(nav).html())
+				//}
+
 			//	if ($('#content.testimonal-template').length > 0) { 
 					
 					$('.testimonals .overlay').each(function () {
